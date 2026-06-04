@@ -1,0 +1,105 @@
+.author-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 20px 0;
+    background: #fff;
+    flex-wrap: wrap;
+}
+
+.author-link__img {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.author-link__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author-link__name {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1a1a1a;
+    text-decoration: none !important;
+    line-height: 1.2;
+}
+
+.author-link__name:hover {
+    text-decoration: underline;
+}
+
+/* Иконка галочки (голубая) */
+.author-link__check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #1d9bf0;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.author-link__check::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 7px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg) translateY(-1px);
+}
+
+/* Лейбл "Автор" */
+.author-link__value.author {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #e6f9ee;
+    color: #17a84b;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    line-height: 1.6;
+    text-transform: none;
+}
+
+/* Кнопка "Страница автора" */
+.author-link__link {
+    margin-left: auto;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.author-link__link:hover {
+    border-color: #999;
+    color: #111;
+}
+
+@media (max-width: 600px) {
+    .author-link {
+        gap: 8px;
+        padding: 12px 14px;
+    }
+    .author-link__link {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}

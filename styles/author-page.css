@@ -67,7 +67,7 @@ body {
 .author-profile__name {
     font-size: 28px;
     font-weight: 700;
-    margin: 0;
+    margin: 0 !important;
     color: #1a1a1a;
 }
 
@@ -116,7 +116,7 @@ body {
     font-size: 13px;
     font-weight: 500;
     color: #1a1a1a;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: all 0.2s;
     white-space: nowrap;
 }
@@ -151,7 +151,7 @@ body {
     font-size: 13px;
     font-weight: 500;
     color: #1a1a1a;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: all 0.2s;
 }
 
@@ -230,11 +230,9 @@ body {
     width: 120px;
     height: 120px;
     margin-bottom: 15px;
-    background: conic-gradient(
-        var(--color, #667eea) 0% calc(var(--pct, 0) * 1%),
-        #f0f0f0 calc(var(--pct, 0) * 1%) 100%
-    );
+    border: solid;
     border-radius: 50%;
+    border-color: var(--color, #667eea) 0% calc(var(--pct, 0) * 1%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,6 +243,7 @@ body {
 
 .author-stats__circle::after {
     content: attr(data-val);
+    color: black;
     position: absolute;
 }
 
@@ -317,6 +316,10 @@ body {
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
+}
+
+.tips-card-author a {
+    text-decoration: none !important;
 }
 
 .tips-card-author:hover {
@@ -447,6 +450,10 @@ body {
     transition: all 0.3s;
 }
 
+.article-card a {
+    text-decoration: none !important;
+}
+
 .article-card:hover {
     border-color: #667eea;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
@@ -485,7 +492,7 @@ body {
     border-radius: 3px;
     font-weight: 600;
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 }
 
 .article-card__category.football {
