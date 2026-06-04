@@ -34,6 +34,15 @@ wp-config.php
 
 # htaccess
 /.htaccess
+/.idea
+
+*.svg
+*.png
+*.webp
+*.jpg
+*.jpeg
+*.gif
+*.ico
 
 # All plugins
 #
